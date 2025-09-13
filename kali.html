@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOHAMMED | Kali OS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="kali-style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+    <audio id="fireworks-sound" src="assets/fireworks.mp3" preload="auto"></audio>
+    <div id="terminal-screen">
+        <div id="terminal-header">
+            <a href="index.html" class="header-back-btn">
+                <i class="fas fa-arrow-left"></i> Back
+            </a>
+            <span class="header-title">MOHAMMED-ALOUFI_OS ></span>
+            <div class="header-buttons">
+                <span class="btn-circle red"></span>
+                <span class="btn-circle yellow"></span>
+                <span class="btn-circle green"></span>
+            </div>
+        </div>
+        <div id="terminal-body">
+            <p class="animate__animated animate__fadeIn">Initializing Kali OS...</p>
+            <p class="animate__animated animate__fadeIn animate__delay-1s">Connection established. Status: <span class="status-ok">[OK]</span></p>
+            <p class="animate__animated animate__fadeIn animate__delay-2s">Loading modules...</p>
+            <p class="animate__animated animate__fadeIn animate__delay-3s"><span class="prompt">guest@kali:~ $</span> help</p>
+            <div id="help-menu">
+                <p>Welcome to Mohammed's Digital System. Available commands:</p>
+                <p>· <span class="command" data-app="profile">profile</span> - View Mohammed's personal data</p>
+                <p>· <span class="command" data-app="skills">skills</span> - Display technical skill set</p>
+                <p>· <span class="command" data-app="education">education</span> - Review academic records</p>
+                <p>· <span class="command" data-app="experience">experience</span> - Show work history</p>
+                <p>· <span class="command" data-app="certs">certs</span> - List licenses & certifications</p>
+                <p>· <span class="command" data-app="contact">contact</span> - Get contact information</p>
+                <p>· <span class="command" data-app="cv">cv</span> - Download the full CV</p>
+                <p>· <span class="command" data-app="clear">clear</span> - Clear the terminal</p>
+            </div>
+            <div id="app-container"></div>
+            <p class="input-line">
+                <span class="prompt">guest@kali:~ $</span>
+                <span id="cursor">|</span>
+            </p>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fireworks-js@2.10.0/dist/index.umd.min.js"></script>
+    <script src="kali-script.js"></script>
+</body>
+</html>
