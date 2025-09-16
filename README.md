@@ -12,7 +12,7 @@ Hello! I'm Mohammed Aloufi, a cybersecurity professional with a deep passion for
 
 This project is best experienced live. I invite you to explore the finished product.
 
-**[Click here to visit the live website!](https://mohammederror.github.io/MY-Secure/)**
+**[Click here to visit the live website!]([https://mohammederror.github.io/MY-Secure/](https://mohammederror.github.io/Cyber-My/))**
 
 ![MY-Secure Portfolio Screenshot](URL_TO_YOUR_SCREENSHOT.png)
 
