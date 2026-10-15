@@ -1,54 +1,41 @@
-# Cyber-My
-### My Personal Hub for Cybersecurity Projects, Research, and Development.
+# Cyber-My · Cyber-Ether
 
-Hello! I'm Mohammed Aloufi, a cybersecurity professional with a deep passion for building secure and resilient digital experiences. This repository is the home of Cyber-My—my personal brand and a collection of my work. It begins with the source code for my portfolio, the first major step in showcasing my skills.
+Personal technical portfolio for Mohammed Ali Salim Al-Oufi, a cybersecurity graduate interested in SOC, cyber defense and network security.
 
----
+[Live GitHub Pages site](https://mohammederror.github.io/Cyber-My/) · [GitHub](https://github.com/MohammedError)
 
-## 🚀 Live Portfolio & Demo
+## Structure
 
-This project is best experienced live. I invite you to explore the finished product.
+- `index.html`: English portfolio, with background, three public educational project case studies, contextual skill levels, CV-reported credentials and email contact.
+- `style.css` / `script.js`: responsive layout, keyboard focus, optional gentle motion and reduced-motion support. Content is visible without JavaScript.
+- `kali.html` / `kali-style.css` / `kali-script.js`: optional portfolio terminal interface. It reads the main page so factual content stays consistent. It is an interface demo; it executes no OS or security commands.
+- `assets/CVmohaamed.pdf`: supplied replacement CV. Existing URL preserved; downloads use the filename `MohammedRu.pdf`.
+- `assets/orbit.svg`: local vector favicon.
+- Original GIF assets are retained. They are not loaded by the revised pages.
+- `docs/content-sources.md`: content evidence, user corrections and unresolved information.
 
-[Click here to visit the live website](https://mohammederror.github.io/Cyber-My/)
+## Run locally
 
----
+No package manager, bundler, API keys or third-party frontend scripts are required.
 
-## ✨ About The Portfolio Project
+```sh
+python -m http.server 4173
+```
 
-My goal was to create more than just a resume; I wanted to build an immersive digital introduction. This project was my canvas to blend a futuristic space aesthetic with a clean, professional layout that truly represents my identity as a cybersecurity enthusiast.
+Open `http://localhost:4173/`. Use HTTP rather than opening HTML as a local file so the optional terminal can fetch the main page.
 
-### Key Features:
-- Live Galaxy Background: An interactive and deeply immersive background powered by tsParticles to create a unique "deep space" theme.  
-- Glowing Glassmorphism UI: A modern, futuristic design with "frosted glass" cards and subtle aurora hover effects for a premium feel.  
-- Interactive Contact Terminal: A unique contact form designed to look and feel like a computer terminal, directly fitting the cybersecurity theme.  
-- Fully Responsive: Meticulously designed to provide a seamless and visually stunning experience on all devices, from mobile phones to high-resolution desktops.  
-- Polished Micro-interactions: Creative animations and hover effects on all interactive elements to enhance the user experience and add a touch of personality.  
+## Deployment
 
----
+Keep the current GitHub Pages branch/root configuration. All runtime assets and links are relative to this repository and work under `/Cyber-My/`; there is no client-side router or build step. Merge the reviewed portfolio branch into `main` to publish through the existing Pages process. The live site reflects the deployed default branch, not an unmerged pull request.
 
-## 🛠️ Tech Stack
+## Content and privacy
 
-- Frontend: HTML5, CSS3, Modern JavaScript (ES6)  
-- Animations & Interactivity: tsParticles, ScrollReveal.js, Typed.js  
-- Icons & Fonts: Font Awesome, Google Fonts  
+Projects are scoped as educational work. Public code supports the stated contributions; no production deployment, security certification of the apps or numerical impact is claimed. SOC is a career interest, not a prior job.
 
----
+Only qualifications supported by the supplied CV are listed. Certificate verification URLs and images have not been supplied. Disputed or unsupported old claims are held out of the website; see the evidence notes.
 
-## 🔭 My Goals for This Repository
+Contact uses a direct email link. The old Web3Forms access key is intended public frontend configuration according to [the provider's FAQ](https://docs.web3forms.com/getting-started/faq), not a secret API key. The form was replaced because its delivery settings could not be verified and the terminal's old form did not submit. No messages were sent during testing. No phone/WhatsApp/social links beyond the professional sources are added to the page. The user-supplied CV contains its own contact details.
 
-This repository will evolve as I do. It is the foundation of the Cyber-My brand, which I plan to expand with practical, hands-on projects, including:
+## Validation
 
-- Security Tools & Scripts: Developing and sharing practical tools for automation, analysis, and defense.  
-- CTF Write-ups: Publishing detailed solutions and methodologies for Capture The Flag challenges.  
-- Research & Documentation: Creating a knowledge base of my findings on various cybersecurity concepts.  
-
-You can follow my detailed documentation and plans in the [Project Wiki](https://github.com/MohammedError/Cyber-My/wiki).
-
----
-
-## 📫 Get In Touch
-
-I'm always open to learning, collaborating, and discussing new opportunities. Feel free to connect with me.
-
-- LinkedIn: [Mohammed Aloufi](https://www.linkedin.com/in/mohammed-ali-s-aloufi-20036b37a/)  
-- Email: [mohammed.secure@outlook.sa](mailto:mohammed.secure@outlook.sa)
+See the pull request for the exact checks and results. Browser checks cover desktop and narrow mobile layouts, anchors and navigation, downloads, keyboard focus, motion preferences, JavaScript-disabled reading, the terminal, local assets, browser errors and basic automated accessibility.

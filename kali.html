@@ -1,54 +1,67 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MOHAMMED | Kali OS</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Explore Mohammed Aloufi's portfolio through an optional, keyboard accessible terminal interface.">
+    <meta name="theme-color" content="#090e1b">
+    <title>Cyber-Ether | Portfolio terminal</title>
+    <link rel="icon" href="assets/orbit.svg" type="image/svg+xml">
     <link rel="stylesheet" href="kali-style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="kali-script.js" defer></script>
 </head>
 <body>
-    <audio id="fireworks-sound" src="assets/fireworks.mp3" preload="auto"></audio>
-    <div id="terminal-screen">
-        <div id="terminal-header">
-            <a href="index.html" class="header-back-btn">
-                <i class="fas fa-arrow-left"></i> Back
-            </a>
-            <span class="header-title">MOHAMMED-ALOUFI_OS ></span>
-            <div class="header-buttons">
-                <span class="btn-circle red"></span>
-                <span class="btn-circle yellow"></span>
-                <span class="btn-circle green"></span>
+    <a class="skip-link" href="#terminal-output">Skip to portfolio content</a>
+    <div class="terminal-shell">
+        <header class="terminal-header">
+            <a class="back-link" href="index.html"><span aria-hidden="true">←</span> Back to portfolio</a>
+            <span class="terminal-brand">CYBER-ETHER <span aria-hidden="true">/</span> TERMINAL</span>
+            <span class="window-dots" aria-hidden="true"><span></span><span></span><span></span></span>
+        </header>
+        <main>
+            <div class="terminal-intro">
+                <p class="eyebrow">OPTIONAL INTERFACE</p>
+                <h1>Explore the portfolio.</h1>
+                <p>Portfolio interface demo — no operating system or security commands are executed.</p>
+                <p class="source-note">This view reads the same content as the <a href="index.html">main portfolio</a>.</p>
             </div>
-        </div>
-        <div id="terminal-body">
-            <p class="animate__animated animate__fadeIn">Initializing Kali OS...</p>
-            <p class="animate__animated animate__fadeIn animate__delay-1s">Connection established. Status: <span class="status-ok">[OK]</span></p>
-            <p class="animate__animated animate__fadeIn animate__delay-2s">Loading modules...</p>
-            <p class="animate__animated animate__fadeIn animate__delay-3s"><span class="prompt">guest@kali:~ $</span> help</p>
-            <div id="help-menu">
-                <p>Welcome to Mohammed's Digital System. Available commands:</p>
-                <p>· <span class="command" data-app="profile">profile</span> - View Mohammed's personal data</p>
-                <p>· <span class="command" data-app="skills">skills</span> - Display technical skill set</p>
-                <p>· <span class="command" data-app="education">education</span> - Review academic records</p>
-                <p>· <span class="command" data-app="experience">experience</span> - Show work history</p>
-                <p>· <span class="command" data-app="certs">certs</span> - List licenses & certifications</p>
-                <p>· <span class="command" data-app="contact">contact</span> - Get contact information</p>
-                <p>· <span class="command" data-app="cv">cv</span> - Download the full CV</p>
-                <p>· <span class="command" data-app="clear">clear</span> - Clear the terminal</p>
-            </div>
-            <div id="app-container"></div>
-            <p class="input-line">
-                <span class="prompt">guest@kali:~ $</span>
-                <span id="cursor">|</span>
-            </p>
-        </div>
-    </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/fireworks-js@2.10.0/dist/index.umd.min.js"></script>
-    <script src="kali-script.js"></script>
+            <nav class="command-menu" aria-label="Portfolio commands">
+                <button type="button" data-command="profile">profile</button>
+                <button type="button" data-command="skills">skills</button>
+                <button type="button" data-command="projects">projects</button>
+                <button type="button" data-command="education">education</button>
+                <button type="button" data-command="experience">experience</button>
+                <button type="button" data-command="certs">certs</button>
+                <button type="button" data-command="contact">contact</button>
+                <button type="button" data-command="cv">cv</button>
+                <button type="button" data-command="help">help</button>
+                <button type="button" data-command="clear">clear</button>
+            </nav>
+
+            <form id="command-form" class="command-form">
+                <label for="command-input">Enter a portfolio command</label>
+                <div class="input-row">
+                    <span class="prompt" aria-hidden="true">guest@cyber-ether:~ $</span>
+                    <input id="command-input" name="command" type="text" placeholder="Try projects or help" autocomplete="off" autocapitalize="none" spellcheck="false" aria-describedby="command-hint" maxlength="80">
+                    <button type="submit">Run</button>
+                </div>
+                <p id="command-hint">Use a button above or type a listed command. Enter runs the command.</p>
+            </form>
+
+            <p id="command-status" role="status" aria-live="polite" aria-atomic="true">Ready. Choose a command to explore.</p>
+            <div id="terminal-output" class="terminal-output" tabindex="-1">
+                <section aria-labelledby="welcome-heading">
+                    <p class="output-label">SYSTEM / HELP</p>
+                    <h2 id="welcome-heading">A different way to browse.</h2>
+                    <p>Choose <strong>projects</strong> to see the work, <strong>skills</strong> for technical knowledge, or <strong>contact</strong> to connect. The <strong>cv</strong> command opens a direct PDF download link.</p>
+                    <p><strong>help</strong> returns here. <strong>clear</strong> clears this panel.</p>
+                    <a class="inline-link" href="assets/CVmohaamed.pdf" download="MohammedRu.pdf">Download CV (PDF)</a>
+                </section>
+            </div>
+            <noscript><p class="fallback">This optional interface needs JavaScript. <a href="index.html">Read the main portfolio</a> or <a href="assets/CVmohaamed.pdf" download="MohammedRu.pdf">download the CV (PDF)</a>.</p></noscript>
+        </main>
+        <footer><span aria-hidden="true">●</span> Static portfolio interface <a href="index.html#contact">Contact Mohammed</a></footer>
+    </div>
 </body>
 </html>

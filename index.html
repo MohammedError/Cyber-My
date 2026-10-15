@@ -1,241 +1,100 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mohammed/ Aloufi | Cyber-Ether</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Mohammed Ali Salim Al-Oufi — cybersecurity graduate focused on SOC, cyber defense and network security. Explore practical training, technical projects and qualifications.">
+<meta name="theme-color" content="#0a0c18">
+<title>Mohammed Al-Oufi | Cyber-Ether</title>
+<link rel="icon" href="assets/orbit.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
 </head>
 <body>
-
-    <audio id="fireworks-sound" src="assets/fireworks.mp3" preload="auto"></audio>
-    <div id="loading-screen">
-        <div class="spinner"></div>
-        <div class="loading-text">Initializing Cyber-Ether...</div>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <a class="logo" href="#home" aria-label="CYBERETHER, home"><span class="logo-mark" aria-hidden="true">✦</span> CYBER<span>ETHER</span><span class="logo-dot">.</span></a>
+  <nav class="navbar" aria-label="Main navigation"><a href="#about">About</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#education">Background</a><a href="#certifications">Credentials</a><a href="#contact">Contact</a></nav>
+  <button class="motion-toggle" type="button" aria-pressed="false" hidden>Motion: off</button>
+</header>
+<main id="main">
+  <section class="home section-shell" id="home" aria-labelledby="hero-title">
+    <div class="home-content">
+      <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> CYBERSECURITY · RIYADH, SAUDI ARABIA</p>
+      <h1 id="hero-title">Mohammed<br><span>Al-Oufi<span class="accent-dot">.</span></span></h1>
+      <p class="hero-role">Cybersecurity graduate.<br><span>Focused on cyber defense.</span></p>
+      <p class="hero-summary">A background in IT support, a foundation in digital forensics, and an interest in protecting networks. Building toward opportunities in SOC and defensive security.</p>
+      <div class="btn-group"><a class="btn primary" href="#projects">Explore my work <span aria-hidden="true">↗</span></a><a class="btn secondary" href="#contact">Get in touch</a></div>
+      <a class="download-link" href="assets/CVmohaamed.pdf" download="MohammedRu.pdf">Download CV <span class="muted">(PDF)</span> <span aria-hidden="true">↓</span></a>
     </div>
-    <canvas class="webgl"></canvas>
-
-    <div id="content-container">
-        <header>
-            <a href="#home" class="logo">Mohammed<span>.</span></a>
-            <nav class="navbar">
-                <a href="#home" class="active">Home</a>
-                <a href="#about">About</a>
-                <a href="#skills">Skills</a>
-                <a href="#education">Education</a>
-                <a href="#experience">Experience</a>
-                <a href="#certifications">Certifications</a>
-                <a href="#contact">Contact</a>
-                <a href="kali.html" class="kali-link">Kali OS</a>
-            </nav>
-        </header>
-
-        <section class="home" id="home">
-            <div class="home-content">
-                <h1>Hi, It's <span>Mohammed Aloufi</span></h1>
-                <h3 class="typing-text">I'm a <span></span></h3>
-                <p>A passionate Cybersecurity graduate with a robust foundation in IT technical support, driven by a vision to create secure and efficient digital environments. Welcome to my personal portfolio.</p>
-                <div class="social-icons">
-                    <a href="https://www.linkedin.com/in/mohammed-ali-s-aloufi-20036b37a/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://wa.me/966590250388" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-                    <a href="https://github.com/MohammedError" target="_blank"><i class="fa-brands fa-github"></i></a>
-                    <a href="https://x.com/mohmmedaa121948" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
-                </div>
-                <div class="btn-group">
-                    <a href="#contact" class="btn hire-me-btn">Hire Me <i class="fas fa-rocket"></i></a>
-                    <a href="assets/CVmohaamed.pdf" class="btn download-cv-btn" download>Download CV <i class="fas fa-download"></i></a>
-                </div>
-            </div>
-            <div class="home-img">
-                <img src="assets/main.gif" alt="Mohammed Aloufi">
-            </div>
-        </section>
-
-        <section id="about" class="about">
-            <h2 class="heading">About <span>Me</span></h2>
-            <div class="about-intro">
-                <h3>Cybersecurity Professional</h3>
-                <p>With a Bachelor's degree in Cybersecurity (2025) and a Diploma in IT Technical Support (2022), I possess a unique blend of theoretical knowledge and hands-on experience. My journey includes practical training as a SOC Analyst and in Network Security, complemented by certifications in Web App Hacking, Cloud Security, and Digital Forensics. I am committed to defending digital infrastructures and continuously expanding my expertise in the ever-evolving world of technology.</p>
-            </div>
-            <div class="about-main">
-                <div class="about-img">
-                    <img src="assets/45Ra.gif" alt="Mohammed Aloufi">
-                </div>
-                <div class="languages">
-                    <h3>Languages</h3>
-                    <p class="lang-note">I speak both languages fluently.</p>
-                    <div class="language-tags">
-                        <span>Arabic</span>
-                        <span>English</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <section id="skills" class="skills">
-            <h2 class="heading">My <span>Skills</span></h2>
-            <div class="skills-container">
-                <div class="skill-box">IT Support</div>
-                <div class="skill-box">SOC Analyst</div>
-                <div class="skill-box">Network Security</div>
-                <div class="skill-box">Cloud Fundamentals</div>
-                <div class="skill-box">Web App Hacking</div>
-                <div class="skill-box">Digital Forensics</div>
-                <div class="skill-box">Oracle Cloud (OCI)</div>
-                <div class="skill-box">AWS Educate</div>
-            </div>
-        </section>
-
-        <section id="education" class="education">
-            <h2 class="heading">My <span>Education</span></h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <h3>Bachelor’s degree in Cybersecurity</h3>
-                        <p>University of Tabuk | 2022 - 2025</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <h3>Diploma in IT Technical Support</h3>
-                        <p>Technical and Vocational Training Corporation | 2020 - 2022</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="experience" class="experience">
-            <h2 class="heading">Work <span>Experience</span></h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <h3>IT Support</h3>
-                        <p>Al-Awali Municipality (Co-op Training) | 2022</p>
-                        <p>Provided technical assistance and troubleshooting for hardware and software issues.</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <h3>SOC Analyst & Network Security</h3>
-                        <p>Udemy (Internship) | 2024</p>
-                        <p>Monitored security alerts, analyzed threats, and contributed to network defense strategies.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="certifications" class="certifications">
-            <h2 class="heading">Licenses & <span>Certifications</span></h2>
-            <div class="certifications-container">
-                <div class="cert-card">
-                    <div class="cert-icon"><i class="fas fa-shield-alt"></i></div>
-                    <h3>eWPT Web Application Penetration Tester</h3>
-                    <p class="issuer"><strong>Issuer:</strong> INE</p>
-                    <p class="date">Issued Mar 2025 · Expires Mar 2028</p>
-                </div>
-                <div class="cert-card">
-                    <div class="cert-icon"><i class="fas fa-cloud"></i></div>
-                    <h3>Accredited Technical Associate - Cloud V1</h3>
-                    <p class="issuer"><strong>Issuer:</strong> INE</p>
-                    <p class="date">Issued Apr 2025 · Expires Apr 2028</p>
-                </div>
-                <div class="cert-card">
-                    <div class="cert-icon"><i class="fas fa-brain"></i></div>
-                    <h3>Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate</h3>
-                    <p class="issuer"><strong>Issuer:</strong> Oracle</p>
-                    <p class="date">Issued Jun 2025</p>
-                </div>
-                <div class="cert-card">
-                    <div class="cert-icon"><i class="fas fa-database"></i></div>
-                    <h3>Oracle Data Platform 2025 Certified Foundations Associate</h3>
-                    <p class="issuer"><strong>Issuer:</strong> Oracle</p>
-                    <p class="date">Issued May 2025 · Expires May 2027</p>
-                </div>
-                <div class="cert-card">
-                    <div class="cert-icon"><i class="fas fa-cloud-upload-alt"></i></div>
-                    <h3>Oracle Cloud Infrastructure 2025 Certified Foundations Associate</h3>
-                    <p class="issuer"><strong>Issuer:</strong> Oracle</p>
-                    <p class="date">Issued Jun 2025 · Expires Jan 2030</p>
-                </div>
-                <div class="cert-card">
-                    <div class="cert-icon"><i class="fab fa-aws"></i></div>
-                    <h3>AWS Educate Machine Learning Foundations</h3>
-                    <p class="issuer"><strong>Issuer:</strong> Amazon Web Services (AWS)</p>
-                    <p class="date">Issued Jun 2025</p>
-                </div>
-                <div class="cert-card">
-                    <div class="cert-icon"><i class="fas fa-robot"></i></div>
-                    <h3>Introducing Generative AI with AWS</h3>
-                    <p class="issuer"><strong>Issuer:</strong> Udacity</p>
-                    <p class="date">Issued May 2025</p>
-                </div>
-                <div class="cert-card">
-                    <div class="cert-icon"><i class="fas fa-network-wired"></i></div>
-                    <h3>IT Security Foundations: Network Security</h3>
-                    <p class="issuer"><strong>Issuer:</strong> LinkedIn</p>
-                    <p class="date">Issued Aug 2025</p>
-                </div>
-                <div class="cert-card">
-                    <div class="cert-icon"><i class="fas fa-gamepad"></i></div>
-                    <h3>edX Verified Certificate for Esports Management</h3>
-                    <p class="issuer"><strong>Issuer:</strong> edX</p>
-                    <p class="date">Issued May 2025</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact" class="contact">
-            <h2 class="heading">Contact <span>Me</span></h2>
-            <div class="contact-terminal">
-                <div class="terminal-header">
-                    <div class="terminal-button red"></div>
-                    <div class="terminal-button yellow"></div>
-                    <div class="terminal-button green"></div>
-                    <div class="terminal-title">MOHAMMED-ALOUFI:/CONTACT_ME</div>
-                </div>
-                <div class="terminal-body">
-                    <form action="https://api.web3forms.com/submit" method="POST">
-                        <input type="hidden" name="access_key" value="f0becb6d-64be-41b9-b2b6-84519a22930d">
-                        <div class="input-line">
-                            <span class="prompt">&gt;</span>
-                            <input type="text" name="name" placeholder="Enter your name..." required>
-                        </div>
-                        <div class="input-line">
-                            <span class="prompt">&gt;</span>
-                            <input type="email" name="email" placeholder="Enter your email..." required>
-                        </div>
-                        <div class="input-line">
-                            <span class="prompt">&gt;</span>
-                            <textarea name="message" rows="4" placeholder="Type your message..." required></textarea>
-                        </div>
-                        <button type="submit" class="btn terminal-btn">Execute Send <i class="fas fa-paper-plane"></i></button>
-                    </form>
-                    <div class="output-line">
-                        <p><i class="fas fa-envelope"></i> <span>CONTACT_EMAIL:</span> <a href="mailto:mohammed.secure@outlook.sa">mohammed.secure@outlook.sa</a></p>
-                    </div>
-                    <div class="output-line">
-                        <p><i class="fas fa-phone"></i> <span>CONTACT_PHONE:</span> <a href="tel:+966590250388">+966590250388</a></p>
-                    </div>
-                    <div class="output-line copyright">
-                        <p>&copy; 2025 Mohammed Aloufi. All Rights Reserved. <span class="cursor">|</span></p>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <div class="hero-visual" aria-hidden="true">
+      <div class="visual-label"><span>CYBER-ETHER / 01</span><span>DEFENSE IN FOCUS</span></div>
+      <div class="orbital-system"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="orbit orbit-three"></div><div class="core"><svg viewBox="0 0 100 110" fill="none"><path d="M50 7 86 22v30c0 24-17 40-36 51C31 92 14 76 14 52V22L50 7Z" stroke="currentColor" stroke-width="2"/><path d="m34 52 11 11 23-26" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span class="orbit-point"></span></div>
+      <div class="visual-footer"><span>OBSERVE. UNDERSTAND. PROTECT.</span><span>✦</span></div>
     </div>
+    <div class="hero-bottom"><span>TECHNICAL PORTFOLIO</span><a href="#about">Discover the background <span aria-hidden="true">↓</span></a><span>01 / 06</span></div>
+  </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/build/three.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.12.0/tsparticles.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/fireworks-js@2.10.0/dist/index.umd.min.js"></script>
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="script.js"></script>
+  <section id="about" class="section-shell about" aria-labelledby="about-title">
+    <div class="section-heading"><p class="eyebrow">01 / ABOUT</p><h2 id="about-title">A practical foundation.<br><span>A defensive mindset.</span></h2></div>
+    <div class="about-copy"><p>I'm Mohammed Ali Salim Al-Oufi, a cybersecurity graduate with a diploma in IT technical support. My training includes helping users resolve Windows, software, hardware and basic connectivity issues.</p><p>My academic work introduced me to digital investigations with FTK Imager and Autopsy. Alongside this, project-based software engineering study has strengthened my understanding of how applications and systems are built.</p><p>I'm interested in SOC operations, incident investigation and network defense, and I want to develop these interests through practical, entry-level security work.</p><a class="text-link" href="#education">View training and education <span aria-hidden="true">↗</span></a></div>
+  </section>
+
+  <section id="projects" class="section-shell" aria-labelledby="projects-title">
+    <div class="section-heading horizontal"><div><p class="eyebrow">02 / SELECTED WORK</p><h2 id="projects-title">From learning<br><span>to implementation.</span></h2></div><p class="section-intro">Public source code, specific contributions and clear scope. These are educational projects, not production security deployments.</p></div>
+    <div class="project-list">
+      <article class="project-card">
+        <div class="project-overview"><span class="project-number">01 / NETWORKS</span><p class="project-type">Individual curriculum exercises</p><h3>Network diagnostics lab</h3><ul class="tech-tags" aria-label="Technologies"><li>Bash</li><li>Linux</li><li>netstat</li><li>ping</li><li>netcat</li></ul><a class="text-link" href="https://github.com/MohammedError/holbertonschool-network" target="_blank" rel="noopener noreferrer">View repository <span aria-hidden="true">↗</span></a></div>
+        <div class="project-details"><div><h4>GOAL</h4><p>Practice inspecting Linux network configuration and troubleshooting basic connectivity.</p></div><div><h4>MY CONTRIBUTION</h4><p>Wrote Bash exercises to inspect listening sockets, check reachability, list IPv4 addresses and test a local listener.</p></div><div><h4>CHALLENGE &amp; SOLUTION</h4><p>An in-place hosts-file edit failed in Docker. I adjusted the lab script to write a temporary file and copy its contents.</p><a class="text-link" href="https://github.com/MohammedError/holbertonschool-network/commit/a8056dae30eeb721c81a4252ea50a1f7c9aca7b6" target="_blank" rel="noopener noreferrer">Inspect the change <span aria-hidden="true">↗</span></a></div><div><h4>DELIVERABLE</h4><p>Source-controlled network exercises and the documented script fix. This is a learning lab, with no production deployment claimed.</p></div></div>
+      </article>
+      <article class="project-card">
+        <div class="project-overview"><span class="project-number">02 / SYSTEMS</span><p class="project-type">Individual curriculum exercises</p><h3>Linux shell &amp; permissions</h3><ul class="tech-tags" aria-label="Technologies"><li>Bash</li><li>Linux</li><li>find</li><li>chown</li><li>Text pipelines</li></ul><a class="text-link" href="https://github.com/MohammedError/holbertonschool-shell" target="_blank" rel="noopener noreferrer">View repository <span aria-hidden="true">↗</span></a></div>
+        <div class="project-details"><div><h4>GOAL</h4><p>Build a practical command-line foundation for navigating and administering Linux systems.</p></div><div><h4>MY CONTRIBUTION</h4><p>Implemented small Bash scripts covering file permissions, ownership, variables, redirection and text-processing pipelines.</p></div><div><h4>CHALLENGE &amp; APPROACH</h4><p>Change ownership only when a file has a specified owner. The exercise filters with find -user before applying chown.</p><a class="text-link" href="https://github.com/MohammedError/holbertonschool-shell/blob/main/permissions/16-if_only" target="_blank" rel="noopener noreferrer">Read the exercise <span aria-hidden="true">↗</span></a></div><div><h4>DELIVERABLE</h4><p>Focused scripts organized by topic. These exercises demonstrate applied learning, rather than professional system administration.</p></div></div>
+      </article>
+      <article class="project-card">
+        <div class="project-overview"><span class="project-number">03 / APPLICATION SECURITY</span><p class="project-type">Collaborative curriculum application</p><h3>HBnB API authorization</h3><ul class="tech-tags" aria-label="Technologies"><li>Python</li><li>Flask</li><li>JWT</li><li>SQLAlchemy</li><li>JavaScript</li></ul><a class="text-link" href="https://github.com/MohammedError/holbertonschool-hbnb" target="_blank" rel="noopener noreferrer">View repository <span aria-hidden="true">↗</span></a></div>
+        <div class="project-details"><div><h4>GOAL</h4><p>Explore authenticated API access and persistent data in a booking-style application.</p></div><div><h4>MY CONTRIBUTION</h4><p>Contributed JWT ownership and admin checks, SQLAlchemy relationships, model tests and web-client integration as part of a team.</p></div><div><h4>CHALLENGE &amp; APPROACH</h4><p>Separate public reads from protected writes. My changes derive user identity from the JWT and check ownership before modifying resources.</p><a class="text-link" href="https://github.com/MohammedError/holbertonschool-hbnb/commit/e78727ef7e7949f957cc7d27205e5e9187f16e01" target="_blank" rel="noopener noreferrer">Inspect my contribution <span aria-hidden="true">↗</span></a></div><div><h4>DELIVERABLE</h4><p>Implemented API, data-model and client contributions in the shared repository. No public live demo or independent security validation is claimed.</p></div></div>
+      </article>
+    </div>
+    <aside class="academic-note"><span class="small-label">ACADEMIC WORK · DIGITAL FORENSICS</span><p>For my graduation project, I conducted a digital forensic investigation using FTK Imager and Autopsy. This is academic work described in my CV; a public report and case materials are not available.</p></aside>
+    <a class="text-link" href="https://github.com/MohammedError" target="_blank" rel="noopener noreferrer">Explore GitHub <span aria-hidden="true">↗</span></a>
+  </section>
+
+  <section id="skills" class="section-shell" aria-labelledby="skills-title">
+    <div class="section-heading horizontal"><div><p class="eyebrow">03 / TECHNICAL SKILLS</p><h2 id="skills-title">Skills with<br><span>context behind them.</span></h2></div><p class="section-intro">Levels describe where I've used a skill. They don't imply mastery or professional security operations experience.</p></div>
+    <div class="skills-grid">
+      <article class="skill-card"><p class="level">PRACTICAL TRAINING</p><h3>IT support</h3><ul><li>Windows troubleshooting</li><li>Software installation &amp; workstation setup</li><li>Hardware &amp; peripheral support</li><li>Basic connectivity troubleshooting</li></ul><a class="text-link" href="#experience">IT support training <span aria-hidden="true">↗</span></a></article>
+      <article class="skill-card"><p class="level">APPLIED LEARNING</p><h3>Systems &amp; development</h3><ul><li>Bash &amp; Linux command-line tools</li><li>Network diagnostics: ping, netstat &amp; netcat</li><li>Python, Flask &amp; SQLAlchemy</li><li>Git, HTML, CSS &amp; JavaScript</li></ul><a class="text-link" href="#projects">Public project evidence <span aria-hidden="true">↗</span></a></article>
+      <article class="skill-card"><p class="level">ACADEMIC APPLICATION</p><h3>Digital forensics</h3><ul><li>FTK Imager</li><li>Autopsy</li><li>Academic digital forensic investigation</li></ul><a class="text-link" href="assets/CVmohaamed.pdf">Graduation project in CV <span aria-hidden="true">↗</span></a></article>
+      <article class="skill-card"><p class="level">FOUNDATIONAL KNOWLEDGE</p><h3>Security &amp; frameworks</h3><ul><li>SIEM concepts &amp; breach analysis</li><li>Vulnerability assessment &amp; web security</li><li>NIST Cybersecurity Framework</li><li>NIST SP 800-53</li><li>Cloud fundamentals</li></ul><a class="text-link" href="#certifications">CV &amp; credentials <span aria-hidden="true">↗</span></a></article>
+    </div>
+  </section>
+
+  <section id="education" class="section-shell background-section" aria-labelledby="education-title">
+    <div class="section-heading"><p class="eyebrow">04 / BACKGROUND</p><h2 id="education-title">Education<br><span>&amp; practical training.</span></h2></div>
+    <div class="background-content">
+      <div class="timeline-entry"><p class="timeline-date">OCT 2025 – JUL 2026</p><h3>Foundational Program in Software Engineering / Full Stack Development</h3><p class="organization">Holberton School</p><p>Project-based learning in programming, data structures, algorithms, operating systems and web development.</p></div>
+      <div class="timeline-entry"><p class="timeline-date">FEB 2022 – FEB 2025</p><h3>Bachelor's Degree in Cybersecurity</h3><p class="organization">Technical and Vocational Training Corporation · Madinah, Saudi Arabia</p><p>Coursework: operating systems, penetration testing, digital forensics and computer networks.</p></div>
+      <div class="timeline-entry"><p class="timeline-date">COMPLETED 2022</p><h3>Diploma in IT Technical Support</h3><p class="organization">Technical and Vocational Training Corporation · Madinah, Saudi Arabia</p></div>
+      <article id="experience" class="timeline-entry experience" aria-labelledby="experience-title"><p class="timeline-date">JAN – SEP 2022 · PRACTICAL TRAINING</p><h3 id="experience-title">IT Support Trainee</h3><p class="organization">Emirate of Madinah Province · Madinah, Saudi Arabia</p><ul><li>Provided first-line support for Windows and software issues, escalating unresolved incidents.</li><li>Set up workstations, installed applications and supported hardware and peripheral devices.</li><li>Troubleshot basic network connectivity issues.</li></ul></article>
+    </div>
+  </section>
+
+  <section id="certifications" class="section-shell" aria-labelledby="certifications-title">
+    <div class="section-heading horizontal"><div><p class="eyebrow">05 / CREDENTIALS</p><h2 id="certifications-title">Continuing<br><span>to build knowledge.</span></h2></div><p class="section-intro">Qualifications listed in my current CV. Public verification links and certificate images are not yet available.</p></div>
+    <div class="credentials">
+      <article class="credential"><span class="credential-number" aria-hidden="true">01</span><div><p class="small-label">INE · CERTIFICATION</p><h3>eWPT Web Application Penetration Tester</h3><p>Issued Mar 2025 · Expires Mar 2028</p></div><span class="credential-symbol" aria-hidden="true">✦</span></article>
+      <article class="credential"><span class="credential-number" aria-hidden="true">02</span><div><p class="small-label">INE · CERTIFICATION</p><h3>Accredited Technical Associate – Cloud V1</h3><p>Issued Apr 2025 · Expires Apr 2028</p></div><span class="credential-symbol" aria-hidden="true">✦</span></article>
+      <article class="credential"><span class="credential-number" aria-hidden="true">03</span><div><p class="small-label">AMAZON WEB SERVICES · LEARNING CREDENTIAL</p><h3>AWS Educate Machine Learning Foundations</h3><p>Jun 2025</p></div><span class="credential-symbol" aria-hidden="true">✦</span></article>
+      <article class="credential"><span class="credential-number" aria-hidden="true">04</span><div><p class="small-label">UDACITY · COURSE</p><h3>Introducing Generative AI with AWS</h3><p>May 2025</p></div><span class="credential-symbol" aria-hidden="true">✦</span></article>
+    </div>
+  </section>
+
+  <section id="contact" class="section-shell contact" aria-labelledby="contact-title">
+    <div><p class="eyebrow">06 / LET'S CONNECT</p><h2 id="contact-title">Let's build<br><span>something secure.</span></h2><p>Interested in discussing an entry-level cybersecurity opportunity, training or a technical collaboration? I'd be glad to connect.</p></div>
+    <div class="contact-terminal"><div class="terminal-header"><span aria-hidden="true">● ● ●</span><span>mohammed / contact</span></div><div class="terminal-body"><p class="small-label">START A CONVERSATION</p><a class="email-link" href="mailto:mohammed.secure@outlook.sa">mohammed.secure@outlook.sa <span aria-hidden="true">↗</span></a><p>Your email app opens directly.</p><div class="contact-links"><a href="https://www.linkedin.com/in/mohsecur/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a><a href="https://github.com/MohammedError" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a><a href="assets/CVmohaamed.pdf" download="MohammedRu.pdf">Download CV <span aria-hidden="true">↓</span></a></div></div></div>
+  </section>
+</main>
+<footer class="section-shell site-footer"><a class="logo" href="#home">CYBER<span>ETHER</span>.</a><p>© <span id="copyright-year">2026</span> Mohammed Al-Oufi</p><a href="kali.html">Open portfolio terminal <span aria-hidden="true">↗</span></a></footer>
 </body>
 </html>
